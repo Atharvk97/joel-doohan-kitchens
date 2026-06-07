@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joel Doohan | Bespoke Kitchens & Craftsmanship Altrincham</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Cormorant Garamond for luxury serif titles, Plus Jakarta Sans for ultra-clean body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['Cormorant Garamond', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brass: {
+                            50: '#FDFBF7',
+                            100: '#F5F0E6',
+                            600: '#B2946B',
+                            700: '#967A55',
+                        },
+                        charcoal: {
+                            800: '#2A3030',
+                            900: '#1A2222',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(to bottom, rgba(26,34,34,0.4) 0%, rgba(26,34,34,0.85) 100%);
+        }
+    </style>
+</head>
+<body class="bg-brass-50 text-charcoal-900 font-sans antialiased selection:bg-brass-600 selection:text-white">
+
+    <!-- TOP ANNOUNCEMENT BAR -->
+    <div class="bg-charcoal-900 text-brass-100 text-[11px] font-medium tracking-[0.2em] uppercase py-2.5 px-6 text-center border-b border-white/5">
+        Handmaking Premium Kitchens Across Altrincham, Wilmslow & Greater Manchester
+    </div>
+
+    <!-- NAVIGATION -->
+    <header class="sticky top-0 w-full z-50 bg-brass-50/90 backdrop-blur-md border-b border-charcoal-900/5">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
+            <div class="flex flex-col">
+                <span class="text-2xl font-serif tracking-[0.05em] font-semibold text-charcoal-900 uppercase">Joel Doohan</span>
+                <span class="text-[10px] tracking-[0.25em] uppercase text-brass-600 -mt-1 font-medium">Bespoke Kitchens</span>
+            </div>
+            
+            <nav class="hidden md:flex space-x-10 text-xs font-semibold tracking-[0.15em] uppercase text-charcoal-900/70">
+                <a href="#about" class="hover:text-brass-600 transition-colors">The Craftsman</a>
+                <a href="#services" class="hover:text-brass-600 transition-colors">Specialities</a>
+                <a href="#portfolio" class="hover:text-brass-600 transition-colors">Selected Work</a>
+                <a href="#reviews" class="hover:text-brass-600 transition-colors">Client Stories</a>
+            </nav>
+
+            <div>
+                <a href="#contact" class="inline-flex items-center justify-center px-6 py-3 text-xs font-semibold tracking-wider uppercase bg-charcoal-900 text-brass-50 hover:bg-brass-600 hover:text-white transition-all duration-300 rounded-sm">
+                    Request Consultation
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative h-[85vh] flex items-center justify-center overflow-hidden bg-charcoal-900">
+        <!-- Background Imagery Placeholder Context: Luxury Shaker Kitchen Interior Detail -->
+        <div class="absolute inset-0 bg-cover bg-center opacity-70 scale-105 transition-transform duration-[10000ms]" style="background-image: url('https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=2000&q=80');"></div>
+        <div class="absolute inset-0 hero-gradient"></div>
+        
+        <div class="relative max-w-4xl mx-auto px-6 text-center z-10 text-white mt-12">
+            <span class="text-xs lg:text-sm font-semibold tracking-[0.3em] uppercase text-brass-600 block mb-4">Incredible Craftsmanship / Built To Last</span>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-serif font-light tracking-wide leading-[1.15] mb-8">
+                Handmade bespoke kitchens tailored for modern living.
+            </h1>
+            <p class="text-sm md:text-base text-slate-300 max-w-xl mx-auto mb-10 font-light leading-relaxed">
+                Meticulously designed, constructed, and hand-fitted in Altrincham by a certified perfectionist. No shortcuts, just flawless execution.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#contact" class="w-full sm:w-auto px-8 py-4 bg-brass-600 text-white text-xs font-semibold tracking-widest uppercase hover:bg-brass-700 transition-all rounded-sm shadow-lg">
+                    Book A Design Visit
+                </a>
+                <a href="#portfolio" class="w-full sm:w-auto px-8 py-4 border border-white/30 text-white text-xs font-semibold tracking-widest uppercase hover:bg-white hover:text-charcoal-900 transition-all rounded-sm">
+                    View Portfolio
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRUST METRICS BAND -->
+    <section class="bg-charcoal-900 border-t border-white/5 py-8 px-6">
+        <div class="max-w-7xl mx-auto flex flex-wrap justify-around items-center gap-y-6 text-center">
+            <div>
+                <div class="text-2xl md:text-3xl font-serif text-brass-600 font-semibold">5.0 ⭐⭐⭐⭐⭐</div>
+                <div class="text-[11px] tracking-widest uppercase text-slate-400 mt-1">22 Verified Google Reviews</div>
+            </div>
+            <div class="h-8 w-px bg-white/10 hidden md:block"></div>
+            <div>
+                <div class="text-2xl md:text-3xl font-serif text-brass-600 font-semibold">10+ Years</div>
+                <div class="text-[11px] tracking-widest uppercase text-slate-400 mt-1">Client Lifetime Trust</div>
+            </div>
+            <div class="h-8 w-px bg-white/10 hidden md:block"></div>
+            <div>
+                <div class="text-2xl md:text-3xl font-serif text-brass-600 font-semibold">Bespoke</div>
+                <div class="text-[11px] tracking-widest uppercase text-slate-400 mt-1">100% Handmade Cabinetry</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- THE CRAFTSMAN / ABOUT -->
+    <section id="about" class="py-24 px-6 lg:px-12 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-5 relative">
+                <!-- Visual Context: Detail of wood finishing or precise cabinet alignment work -->
+                <div class="aspect-[4/5] bg-charcoal-800 rounded-sm overflow-hidden shadow-xl">
+                    <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1000&q=80" alt="Precision Craftsmanship Detail" class="w-full h-full object-cover">
+                </div>
+                <div class="absolute -bottom-6 -right-6 w-48 h-48 bg-brass-100 -z-10 rounded-sm hidden sm:block"></div>
+            </div>
+            <div class="lg:col-span-7 lg:pl-8">
+                <span class="text-xs font-semibold tracking-[0.2em] uppercase text-brass-600 block mb-3">Meet Joel Doohan</span>
+                <h2 class="text-3xl md:text-5xl font-serif text-charcoal-900 tracking-wide mb-6">A rare find: A professional installer who realizes your dreams.</h2>
+                <div class="space-y-6 text-charcoal-800 text-sm md:text-base font-light leading-relaxed">
+                    <p>
+                        Based in Timperley, Altrincham, Joel Doohan has built a reputation over the past decade as a master kitchen craftsman. Unlike high-street corporate suppliers who drop prefabricated flat-packs at your door, Joel treats every kitchen renovation as a unique piece of architecture.
+                    </p>
+                    <blockquote class="border-l-2 border-brass-600 pl-4 my-6 italic text-charcoal-900 font-serif text-lg">
+                        "He listens to exactly what you want, brings invaluable spatial design expertise to the table, and executes with precision detail."
+                    </blockquote>
+                    <p>
+                        From rerouting plumbing and intricate electrical configuration to implementing custom cabinet spray-finishes, nothing is too much trouble. It is exactly why local homeowners choose to wait months just to secure Joel's dedicated personal service.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES / SPECIALITIES -->
+    <section id="services" class="bg-charcoal-900 text-white py-24 px-6 lg:px-12">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs font-semibold tracking-[0.2em] uppercase text-brass-600 block mb-3">Our Expertise</span>
+                <h2 class="text-3xl md:text-5xl font-serif tracking-wide">Bespoke Solutions From Concept To Completion</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-charcoal-800 p-8 border border-white/5 rounded-sm hover:border-brass-600/30 transition-all group">
+                    <div class="text-brass-600 text-3xl font-serif mb-6 group-hover:scale-110 transition-transform origin-left">01</div>
+                    <h3 class="text-xl font-serif mb-4 tracking-wide">Bespoke Kitchen Design</h3>
+                    <p class="text-sm text-slate-300 font-light leading-relaxed">
+                        Complete spatial redesigning of small layouts, breakfast rooms, or vast open plan spaces. Expert sourcing of top-tier integrated appliances.
+                    </p>
+                </div>
+                <!-- Service 2 -->
+                <div class="bg-charcoal-800 p-8 border border-white/5 rounded-sm hover:border-brass-600/30 transition-all group">
+                    <div class="text-brass-600 text-3xl font-serif mb-6 group-hover:scale-110 transition-transform origin-left">02</div>
+                    <h3 class="text-xl font-serif mb-4 tracking-wide">Inframe & Shaker Joinery</h3>
+                    <p class="text-sm text-slate-300 font-light leading-relaxed">
+                        Handmade solid wood structures featuring elegant traditional cabinetry details, beautiful flush drawers, and custom cabinet spraying services.
+                    </p>
+                </div>
+                <!-- Service 3 -->
+                <div class="bg-charcoal-800 p-8 border border-white/5 rounded-sm hover:border-brass-600/30 transition-all group">
+                    <div class="text-brass-600 text-3xl font-serif mb-6 group-hover:scale-110 transition-transform origin-left">03</div>
+                    <h3 class="text-xl font-serif mb-4 tracking-wide">Utility & Media Spaces</h3>
+                    <p class="text-sm text-slate-300 font-light leading-relaxed">
+                        Extending meticulous attention to detail into bespoke utility room fitments, hall furniture, structural storage systems, and tricky custom TV cabinetry.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- REAL CLIENT PORTFOLIO ARCHITECTURE (FULLY CUSTOM LOCAL IMAGES) -->
+    <!-- ========================================== -->
+    <section id="portfolio" class="py-24 px-6 lg:px-12 max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16">
+            <div>
+                <span class="text-xs font-semibold tracking-[0.2em] uppercase text-brass-600 block mb-3">Craftsmanship Showcase</span>
+                <h2 class="text-3xl md:text-5xl font-serif text-charcoal-900 tracking-wide">Selected Renovations</h2>
+            </div>
+            <p class="text-sm text-charcoal-800 max-w-xs font-light leading-relaxed mt-4 md:mt-0">
+                Real transformation photography extracted directly from our highly praised local projects. Click any project to view the full build pipeline.
+            </p>
+        </div>
+
+        <!-- MAIN PREVIEW GRID -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Project 1: Paul Bolton -->
+            <div class="group cursor-pointer" onclick="openModal('modal-paul')">
+                <div class="aspect-[4/3] w-full bg-charcoal-800 overflow-hidden rounded-sm relative shadow-md border border-charcoal-900/5">
+                    <!-- Preview Image: p1.jpg -->
+                    <img src="p1.jpg" alt="Paul Bolton Kitchen Renovation" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-charcoal-900/70 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col items-center justify-center p-4">
+                        <span class="px-4 py-2 border border-white text-white text-[10px] tracking-widest uppercase font-medium mb-2">View Project Gallery</span>
+                        <span class="text-[11px] text-brass-100 font-light text-center">Exposed Brick & Navy Island Fit (6 Photos)</span>
+                    </div>
+                </div>
+                <h3 class="font-serif text-xl text-charcoal-900 mt-4 tracking-wide group-hover:text-brass-600 transition-colors">Contemporary Industrial & In-Frame Kitchen</h3>
+                <p class="text-xs text-brass-600 uppercase tracking-widest mt-1 font-medium">Client: Paul Bolton • Sale District</p>
+            </div>
+
+            <!-- Project 2: Diane Lowes -->
+            <div class="group cursor-pointer" onclick="openModal('modal-diane')">
+                <div class="aspect-[4/3] w-full bg-charcoal-800 overflow-hidden rounded-sm relative shadow-md border border-charcoal-900/5">
+                    <!-- Preview Image: d1.jpg -->
+                    <img src="d1.jpg" alt="Diane Lowes Kitchen Renovation" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-charcoal-900/70 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col items-center justify-center p-4">
+                        <span class="px-4 py-2 border border-white text-white text-[10px] tracking-widest uppercase font-medium mb-2">View Project Gallery</span>
+                        <span class="text-[11px] text-brass-100 font-light text-center">Classic Curved Island Setup (5 Photos)</span>
+                    </div>
+                </div>
+                <h3 class="font-serif text-xl text-charcoal-900 mt-4 tracking-wide group-hover:text-brass-600 transition-colors">Classic Curved Shaker Kitchen</h3>
+                <p class="text-xs text-brass-600 uppercase tracking-widest mt-1 font-medium">Client: Diane Lowes • Altrincham Suburbs</p>
+            </div>
+
+            <!-- Project 3: Rebecca de Sauza -->
+            <div class="group cursor-pointer" onclick="openModal('modal-rebecca')">
+                <div class="aspect-[4/3] w-full bg-charcoal-800 overflow-hidden rounded-sm relative shadow-md border border-charcoal-900/5">
+                    <!-- Preview Image: r1.jpg -->
+                    <img src="r1.jpg" alt="Rebecca de Sauza Kitchen Renovation" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-charcoal-900/70 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col items-center justify-center p-4">
+                        <span class="px-4 py-2 border border-white text-white text-[10px] tracking-widest uppercase font-medium mb-2">View Project Gallery</span>
+                        <span class="text-[11px] text-brass-100 font-light text-center">Minimalist Dark Base Design (3 Photos)</span>
+                    </div>
+                </div>
+                <h3 class="font-serif text-xl text-charcoal-900 mt-4 tracking-wide group-hover:text-brass-600 transition-colors">Modern Minimalist Contrast Suite</h3>
+                <p class="text-xs text-brass-600 uppercase tracking-widest mt-1 font-medium">Client: Rebecca de Sauza • Timperley Project</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- LIGHTBOX MODALS ARCHITECTURE (POPUP GRIDS) -->
+    <!-- ========================================== -->
+
+    <!-- Paul Bolton Full Modal (6 Photos) -->
+    <div id="modal-paul" class="fixed inset-0 z-[100] hidden bg-charcoal-900/95 backdrop-blur-md flex items-center justify-center p-4 transition-all duration-300">
+        <div class="bg-brass-50 max-w-5xl w-full rounded-sm max-h-[85vh] overflow-y-auto p-6 md:p-10 relative shadow-2xl">
+            <button onclick="closeModal('modal-paul')" class="absolute top-4 right-4 md:top-6 md:right-6 text-charcoal-900 hover:text-brass-600 text-3xl font-light transition-colors focus:outline-none">&times;</button>
+            
+            <div class="mb-8 border-b border-charcoal-900/10 pb-4">
+                <h4 class="font-serif text-2xl md:text-3xl text-charcoal-900 font-semibold">Paul Bolton Project Build</h4>
+                <p class="text-xs text-brass-600 uppercase tracking-widest mt-1">Full Showcase — Featuring Custom Industrial Finishes & Utility Rerouting</p>
+            </div>
+            
+            <!-- Grid displaying p1 to p6 -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="aspect-[4/3] rounded-sm overflow-hidden bg-charcoal-800 shadow-sm"><img src="p1.jpg" class="w-full h-full object-cover hover:scale-102 transition-transform"></div>
+                <div class="aspect-[4/3] rounded-sm overflow-hidden bg-charcoal-800 shadow-sm"><img src="p2.jpg" class="w-full h-full object-cover hover:scale-102 transition-transform"></div>
+                <div class="aspect-[4/3] rounded-sm overflow-hidden bg-charcoal-800 shadow-sm"><img src="p3.jpg" class="w-full h-full object-cover hover:scale-102 transition-transform"></div>
+                <div class="aspect-[4/3] rounded-sm overflow-hidden bg-charcoal-800 shadow-sm"><img src="p4.jpg" class="w-full h-full object-cover hover:scale-102 transition-transform"></div>
+                <div class="aspect-[4/3] rounded-sm overflow-hidden bg-charcoal-800 shadow-sm"><img src="p5.jpg" class="w-full h-full object-cover hover:scale-102 transition-transform"></div>
+                <div class="aspect-[4/3] rounded-sm overflow-hidden bg-charcoal-800 shadow-sm"><img src="p6.jpg" class="w-full h-full object-cover hover:scale-102 transition-transform"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Diane Lowes Full Modal (5 Photos) -->
+    <div id="modal-diane" class="fixed inset-0 z-[100] hidden bg-charcoal-900/95 backdrop-blur-md flex items-center justify-center p-4 transition-all duration-300">
+        <div class="bg-brass-50 max-w-5xl w-full rounded-sm max-h-[85vh] overflow-y-auto p-6 md:p-10 relative shadow-2xl">
+            <button onclick="closeModal('modal-diane')" class="absolute top-4 right-4 md:top-6 md:right-6 text-charcoal-900 hover:text-brass-600 text-3xl font-light transition-colors focus:outline-none">&times;</button>
+            
+            <div class="mb-8 border-b border-charcoal-900/10 pb-4">
+                <h4 class="font-serif text-2xl md:text-3xl text-charcoal-900 font-semibold">Diane Lowes Project Build</h4>
+                <p class="text-xs text-brass-600 uppercase tracking-widest mt-1">Full Showcase — Elegantly Crafted Curved Islands & Bespoke Traditional Shaker Styles</p>
+            </div>
+            
+            <!-- Grid displaying d1 to d5 -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="aspect-[4/3] rounded-sm overflow-hidden bg-charcoal-800 shadow-sm"><img src="d1.jpg" class="w-full h-full object-cover hover:scale-102 transition-transform"></div>
+                <div class="aspect-[4/3] rounded-sm overflow-hidden bg-charcoal-800 shadow-sm"><img src="d2.jpg" class="w-full h-full object-cover hover:scale-102 transition-transform"></div>
+                <div class="aspect-[4/3] rounded-sm overflow-hidden bg-charcoal-800 shadow-sm"><img src="d3.jpg" class="w-full h-full object-cover hover:scale-102 transition-transform"></div>
+                <div class="aspect-[4/3] rounded-sm overflow-hidden bg-charcoal-800 shadow-sm"><img src="d4.jpg" class="w-full h-full object-cover hover:scale-102 transition-transform"></div>
+                <div class="aspect-[4/3] rounded-sm overflow-hidden bg-charcoal-800 shadow-sm"><img src="d5.jpg" class="w-full h-full object-cover hover:scale-102 transition-transform"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rebecca de Sauza Full Modal (3 Photos) -->
+    <div id="modal-rebecca" class="fixed inset-0 z-[100] hidden bg-charcoal-900/95 backdrop-blur-md flex items-center justify-center p-4 transition-all duration-300">
+        <div class="bg-brass-50 max-w-5xl w-full rounded-sm max-h-[85vh] overflow-y-auto p-6 md:p-10 relative shadow-2xl">
+            <button onclick="closeModal('modal-rebecca')" class="absolute top-4 right-4 md:top-6 md:right-6 text-charcoal-900 hover:text-brass-600 text-3xl font-light transition-colors focus:outline-none">&times;</button>
+            
+            <div class="mb-8 border-b border-charcoal-900/10 pb-4">
+                <h4 class="font-serif text-2xl md:text-3xl text-charcoal-900 font-semibold">Rebecca de Sauza Project Build</h4>
+                <p class="text-xs text-brass-600 uppercase tracking-widest mt-1">Full Showcase — Handle-less Matte Minimalist Custom Suite</p>
+            </div>
+            
+            <!-- Grid displaying r1 to r3 -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="aspect-[4/3] rounded-sm overflow-hidden bg-charcoal-800 shadow-sm"><img src="r1.jpg" class="w-full h-full object-cover hover:scale-102 transition-transform"></div>
+                <div class="aspect-[4/3] rounded-sm overflow-hidden bg-charcoal-800 shadow-sm"><img src="r2.jpg" class="w-full h-full object-cover hover:scale-102 transition-transform"></div>
+                <div class="aspect-[4/3] rounded-sm overflow-hidden bg-charcoal-800 shadow-sm"><img src="r3.jpg" class="w-full h-full object-cover hover:scale-102 transition-transform"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CORE JAVASCRIPT FOR LIGHTBOX ENGINE -->
+    <script>
+        function openModal(modalId) {
+            const modal = document.getElementById(modalId);
+            modal.classList.remove('hidden');
+            // Smoothly remove overflow to block background scrolling while reading individual specs
+            document.body.style.overflow = 'hidden';
+        }
+        function closeModal(modalId) {
+            const modal = document.getElementById(modalId);
+            modal.classList.add('hidden');
+            // Re-enable document flow scrolling
+            document.body.style.overflow = 'auto';
+        }
+        
+        // Close modal automatically if client clicks outside the white content sheet
+        window.onclick = function(event) {
+            if (event.target.id.startsWith('modal-')) {
+                event.target.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            }
+        }
+    </script>
+
+    <!-- REAL CLIENT TESTIMONIALS (INTEGRATED) -->
+    <section id="reviews" class="bg-brass-100 py-24 px-6 lg:px-12">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs font-semibold tracking-[0.2em] uppercase text-brass-600 block mb-3">Word of Mouth</span>
+                <h2 class="text-3xl md:text-5xl font-serif text-charcoal-900 tracking-wide">Trusted By Generations Of Homeowners</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Review 1: Paul Bolton -->
+                <div class="bg-brass-50 p-8 rounded-sm shadow-sm border border-charcoal-900/5 relative flex flex-col justify-between">
+                    <div>
+                        <div class="text-brass-600 tracking-widest text-sm mb-4">⭐⭐⭐⭐⭐</div>
+                        <p class="text-charcoal-800 text-sm font-light italic leading-relaxed mb-6">
+                            "Joel recently fitted our new kitchen and utility room and we are absolutely over the moon with the end result. His knowledge was superb and attention to detail was incredible and absolutely nothing was too much trouble for him. Highly recommend to anyone needing a high quality kitchen fit at a really reasonable cost."
+                        </p>
+                    </div>
+                    <div class="border-t border-charcoal-900/10 pt-4">
+                        <h4 class="font-semibold text-xs tracking-wider uppercase text-charcoal-900">Paul Bolton</h4>
+                        <p class="text-[10px] text-brass-600 tracking-widest uppercase mt-0.5">New Kitchen & Utility Room Fit</p>
+                    </div>
+                </div>
+
+                <!-- Review 2: Jennifer Hepburn -->
+                <div class="bg-brass-50 p-8 rounded-sm shadow-sm border border-charcoal-900/5 relative flex flex-col justify-between">
+                    <div>
+                        <div class="text-brass-600 tracking-widest text-sm mb-4">⭐⭐⭐⭐⭐</div>
+                        <p class="text-charcoal-800 text-sm font-light italic leading-relaxed mb-6">
+                            "Joel is a complete perfectionist where nothing is too much trouble. He refitted our small kitchen and breakfast room in a different layout so plumbing and electrics etc had to be rerouted. Joel's attention to detail and workmanship show in the finished job, we are so pleased. It was worth the wait to get him."
+                        </p>
+                    </div>
+                    <div class="border-t border-charcoal-900/10 pt-4">
+                        <h4 class="font-semibold text-xs tracking-wider uppercase text-charcoal-900">Jennifer Hepburn</h4>
+                        <p class="text-[10px] text-brass-600 tracking-widest uppercase mt-0.5">Complete Structural Layout Redesign</p>
+                    </div>
+                </div>
+
+                <!-- Review 3: Ian Smallwood -->
+                <div class="bg-brass-50 p-8 rounded-sm shadow-sm border border-charcoal-900/5 relative flex flex-col justify-between">
+                    <div>
+                        <div class="text-brass-600 tracking-widest text-sm mb-4">⭐⭐⭐⭐⭐</div>
+                        <p class="text-charcoal-800 text-sm font-light italic leading-relaxed mb-6">
+                            "We had to wait until the end of August before he could begin our kitchen. It was definitely worth the wait. Joel worked alongside us to design our kitchen where his experience and knowledge were invaluable. He handmade our Bespoke kitchen with incredible Craftsmanship. Joel's attention to detail is amazing."
+                        </p>
+                    </div>
+                    <div class="border-t border-charcoal-900/10 pt-4">
+                        <h4 class="font-semibold text-xs tracking-wider uppercase text-charcoal-900">Ian & Irene Smallwood</h4>
+                        <p class="text-[10px] text-brass-600 tracking-widest uppercase mt-0.5">Handmade Bespoke Installation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRANSPARENT PROCESS & LEAD CAPTURE FORM -->
+    <section id="contact" class="py-24 px-6 lg:px-12 max-w-4xl mx-auto">
+        <div class="bg-charcoal-900 text-white rounded-sm p-8 md:p-12 shadow-2xl relative overflow-hidden">
+            <div class="relative z-10">
+                <div class="text-center max-w-xl mx-auto mb-12">
+                    <span class="text-xs font-semibold tracking-[0.2em] uppercase text-brass-600 block mb-3">Project Enquiries</span>
+                    <h2 class="text-3xl md:text-4xl font-serif tracking-wide mb-4">Let's Discuss Your Dream Kitchen Space</h2>
+                    <p class="text-xs text-slate-400 leading-relaxed font-light">
+                        Due to high demand and bespoke manufacturing timelines, Joel takes on a limited number of structural installations each month. Book an initial spatial consultation today.
+                    </p>
+                </div>
+
+                <form class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-[10px] tracking-widest uppercase text-slate-400 font-semibold mb-2">Your Full Name</label>
+                            <input type="text" placeholder="e.g. Phil Burt" class="w-full bg-charcoal-800 border border-white/10 rounded-sm px-4 py-3 text-sm focus:outline-none focus:border-brass-600 text-white transition-colors placeholder:text-slate-600">
+                        </div>
+                        <div>
+                            <label class="block text-[10px] tracking-widest uppercase text-slate-400 font-semibold mb-2">Phone Number</label>
+                            <input type="tel" placeholder="e.g. +44 7870 200800" class="w-full bg-charcoal-800 border border-white/10 rounded-sm px-4 py-3 text-sm focus:outline-none focus:border-brass-600 text-white transition-colors placeholder:text-slate-600">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-[10px] tracking-widest uppercase text-slate-400 font-semibold mb-2">Property Location / Area</label>
+                        <input type="text" placeholder="e.g. Timperley / Altrincham Suburbs" class="w-full bg-charcoal-800 border border-white/10 rounded-sm px-4 py-3 text-sm focus:outline-none focus:border-brass-600 text-white transition-colors placeholder:text-slate-600">
+                    </div>
+                    <div>
+                        <label class="block text-[10px] tracking-widest uppercase text-slate-400 font-semibold mb-2">Briefly Describe Your Project Ambitions</label>
+                        <textarea rows="4" placeholder="e.g. Looking to strip a small traditional kitchen and install a modern open-plan shaker kitchen with flush cabinet re-spraying..." class="w-full bg-charcoal-800 border border-white/10 rounded-sm px-4 py-3 text-sm focus:outline-none focus:border-brass-600 text-white transition-colors placeholder:text-slate-600"></textarea>
+                    </div>
+                    <button type="submit" class="w-full py-4 bg-brass-600 hover:bg-brass-700 text-white text-xs font-semibold tracking-widest uppercase transition-colors rounded-sm shadow-md">
+                        Request Architectural Consultation
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ARCHITECTURAL FOOTER -->
+    <footer class="bg-charcoal-900 text-slate-400 text-xs py-12 px-6 lg:px-12 border-t border-white/5">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-center text-center md:text-left">
+            <div>
+                <div class="text-base font-serif tracking-wider text-white uppercase font-semibold">Joel Doohan</div>
+                <div class="text-[10px] tracking-widest uppercase text-brass-600 mt-0.5">Bespoke Cabinetry & Fitting</div>
+            </div>
+            <div class="text-center font-light text-slate-400 space-y-1">
+                <p>📍 148 Stockport Road, Timperley, Altrincham, WA15 7SR</p>
+                <p>📞 +44 7870 200800</p>
+            </div>
+            <div class="md:text-right text-[11px] font-light text-slate-500">
+                <p>© 2026 JOEL DOOHAN LIMITED. All rights reserved.</p>
+                <p class="mt-1 text-[10px]">Company Number: 09751677 | Incorporated in England & Wales.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
