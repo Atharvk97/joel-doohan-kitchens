@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joel Doohan | Bespoke Kitchens & Craftsmanship Altrincham</title>
+    <title>Doohan Interiors | Premium Modular Kitchens & Complete Home Renovations Mumbai</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
+    <!-- Google Fonts: Cormorant Garamond for elegant headings & Plus Jakarta Sans for clean body text -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <script>
         tailwind.config = {
@@ -41,380 +41,524 @@
     </script>
     <style>
         .hero-gradient {
-            background: linear-gradient(to bottom, rgba(26,34,34,0.4) 0%, rgba(26,34,34,0.85) 100%);
+            background: linear-gradient(to bottom, rgba(26,34,34,0.5) 0%, rgba(26,34,34,0.9) 100%);
         }
         @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
         }
         .animate-delay-1 { animation-delay: 200ms; }
         .animate-delay-2 { animation-delay: 400ms; }
         .animate-delay-3 { animation-delay: 600ms; }
     </style>
 </head>
-<body class="bg-brass-50 text-charcoal-900 font-sans antialiased selection:bg-brass-600 selection:text-white">
+<body class="bg-brass-50 text-charcoal-900 font-sans antialiased selection:bg-brass-600 selection:text-white pb-20 md:pb-0">
 
     <!-- TOP ANNOUNCEMENT BAR -->
-    <div class="bg-charcoal-900 text-brass-100 text-[11px] font-medium tracking-[0.2em] uppercase py-2.5 px-6 text-center border-b border-white/5">
-        Handmaking Premium Kitchens Across Altrincham, Wilmslow & Greater Manchester
+    <div class="bg-charcoal-900 text-brass-100 text-[11px] font-medium tracking-[0.2em] uppercase py-3 px-6 text-center border-b border-white/5">
+        Premium Modular Kitchens & Full Home Interior Designers in Mumbai, Thane & Navi Mumbai
     </div>
 
-    <!-- NAVIGATION -->
+    <!-- NAVIGATION HEADER (RESOLVED OVERLAPPING ISSUES) -->
     <header class="sticky top-0 w-full z-50 bg-brass-50/90 backdrop-blur-md border-b border-charcoal-900/5">
-        <div class="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
-            <div class="flex flex-col">
-                <span class="text-2xl font-serif tracking-[0.05em] font-semibold text-charcoal-900 uppercase">Joel Doohan</span>
-                <span class="text-[10px] tracking-[0.25em] uppercase text-brass-600 -mt-1 font-medium">Bespoke Kitchens</span>
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 h-24 flex items-center justify-between gap-4">
+            <!-- Brand Identity -->
+            <div class="flex flex-col shrink-0">
+                <span class="text-2xl font-serif tracking-[0.05em] font-semibold text-charcoal-900 uppercase">Doohan Interiors</span>
+                <span class="text-[10px] tracking-[0.25em] uppercase text-brass-600 -mt-1 font-bold">Luxury Modular Kitchens</span>
             </div>
             
-            <nav class="hidden md:flex space-x-10 text-xs font-semibold tracking-[0.15em] uppercase text-charcoal-900/70">
-                <a href="#about" class="hover:text-brass-600 transition-colors">The Craftsman</a>
-                <a href="#services" class="hover:text-brass-600 transition-colors">Specialities</a>
-                <a href="#portfolio" class="hover:text-brass-600 transition-colors">Selected Work</a>
-                <a href="#reviews" class="hover:text-brass-600 transition-colors">Client Stories</a>
+            <!-- Safe Navigation spacing to avoid text clashes -->
+            <nav class="hidden xl:flex items-center space-x-6 xl:space-x-8 text-xs font-bold tracking-[0.15em] uppercase text-charcoal-900/70">
+                <a href="#about" class="hover:text-brass-600 transition-colors whitespace-nowrap">About Us</a>
+                <a href="#why-choose-us" class="hover:text-brass-600 transition-colors whitespace-nowrap">Why Choose Us</a>
+                <a href="#services" class="hover:text-brass-600 transition-colors whitespace-nowrap">Our Services</a>
+                <a href="#portfolio" class="hover:text-brass-600 transition-colors whitespace-nowrap">Our Work</a>
+                <a href="#process" class="hover:text-brass-600 transition-colors whitespace-nowrap">Work Process</a>
+                <a href="#materials" class="hover:text-brass-600 transition-colors whitespace-nowrap">Materials</a>
             </nav>
 
-            <div>
-                <a href="#contact" class="inline-flex items-center justify-center px-6 py-3 text-xs font-semibold tracking-wider uppercase bg-charcoal-900 text-brass-50 hover:bg-brass-600 hover:text-white transition-all duration-300 rounded-sm">
-                    Request Consultation
+            <!-- Responsive Right-side CTA button -->
+            <div class="hidden sm:block shrink-0">
+                <a href="#contact" class="inline-flex items-center justify-center px-6 py-4 text-xs font-bold tracking-wider uppercase bg-charcoal-900 text-brass-50 hover:bg-brass-600 hover:text-white transition-all duration-300 rounded-sm shadow-sm">
+                    Get Free Quote
                 </a>
             </div>
         </div>
     </header>
 
-    <!-- FLOATING WHATSAPP CTA ENGINE -->
+    <!-- FLOATING WHATSAPP CTA -->
     <div class="fixed bottom-6 right-6 z-50 group">
-        <!-- Tooltip -->
         <span class="absolute right-14 top-1/2 -translate-y-1/2 bg-charcoal-900 text-white text-[11px] tracking-wider uppercase py-1.5 px-3 rounded-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap pointer-events-none border border-white/10 shadow-xl">
-            Chat With Us On WhatsApp
+            Chat On WhatsApp
         </span>
-        <!-- Button -->
-        <a href="https://wa.me/447870200800" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-12 h-12 bg-[#25D366] rounded-full shadow-2xl hover:scale-110 transition-transform duration-300 relative group">
-            <!-- Pulsing Rings Loop -->
+        <a href="https://wa.me/447870200800" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-12 h-12 bg-[#25D366] rounded-full shadow-2xl hover:scale-110 transition-transform duration-300 relative">
             <span class="absolute inline-flex h-full w-full rounded-full bg-[#25D366] opacity-40 animate-ping"></span>
-            <!-- Icon -->
             <svg class="w-6 h-6 text-white fill-current" viewBox="0 0 24 24">
                 <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.713-1.457L0 24zm6.59-4.846c1.6.95 3.498 1.451 5.411 1.451 5.458 0 9.9-4.444 9.904-9.902.002-2.643-1.023-5.13-2.887-6.996C17.205 1.841 14.716 1.81 12.01 1.81c-5.461 0-9.904 4.444-9.907 9.904-.001 1.93.504 3.814 1.464 5.432l-.1.356-.98 3.578 3.655-.959.355.1zM17.5 14.25c-.279-.139-1.647-.812-1.9-.905-.252-.092-.436-.139-.619.139-.183.279-.707.905-.867 1.09-.16.184-.32.207-.6.068-.279-.139-1.181-.435-2.251-1.39-.832-.743-1.393-1.661-1.556-1.938-.163-.277-.017-.427.122-.565.125-.124.279-.324.419-.486.14-.162.186-.278.279-.463.093-.185.047-.347-.023-.486-.069-.139-.619-1.493-.848-2.046-.224-.537-.471-.463-.648-.473-.166-.009-.356-.01-.547-.01-.19 0-.501.071-.763.353-.262.282-1.001.977-1.001 2.384 0 1.407 1.023 2.766 1.166 2.953.143.187 2.013 3.074 4.877 4.31.682.294 1.214.47 1.63.601.685.218 1.31.187 1.802.114.549-.082 1.648-.674 1.88-1.324.23-.65.23-1.206.162-1.323-.069-.118-.252-.187-.531-.327z"/>
             </svg>
         </a>
     </div>
 
-    <!-- MAIN CONTENT CONTAINER -->
     <main>
-        
-        <!-- HERO SECTION WITH CINEMATIC BACKGROUND -->
+        <!-- HERO SECTION (RESOLVED PADDING & COMPRESSION ACCORDING TO IMAGE_88777E.PNG) -->
         <section class="relative h-[90vh] flex items-center justify-center overflow-hidden bg-charcoal-900">
-            <!-- Luxury Kitchen Cinematic Video Background Loop -->
             <video class="absolute inset-0 w-full h-full object-cover opacity-50 scale-102" autoplay loop muted playsinline poster="p1.jpg">
                 <source src="https://assets.mixkit.co/videos/preview/mixkit-kitchen-interior-of-a-modern-house-41527-large.mp4" type="video/mp4">
             </video>
             <div class="absolute inset-0 hero-gradient"></div>
             
-            <div class="relative max-w-5xl mx-auto px-6 text-center z-10 text-white mt-8 opacity-0 animate-fade-in-up">
-                <span class="text-xs lg:text-sm font-semibold tracking-[0.3em] uppercase text-brass-600 block mb-5">Incredible Craftsmanship / Built To Last</span>
-                <h1 class="text-4xl md:text-6xl lg:text-7xl font-serif font-light tracking-wide leading-[1.15] mb-8">
-                    Handmade bespoke kitchens tailored for modern living.
+            <div class="relative max-w-5xl mx-auto px-6 sm:px-12 text-center z-10 text-white opacity-0 animate-fade-in-up">
+                <span class="text-xs lg:text-sm font-semibold tracking-[0.3em] uppercase text-brass-600 block mb-6">Expert Kitchen & Interior Renovations</span>
+                <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif font-light tracking-wide leading-[1.2] mb-8">
+                    Beautiful modular kitchens designed for local modern homes.
                 </h1>
-                <p class="text-sm md:text-base text-slate-300 max-w-xl mx-auto mb-12 font-light leading-relaxed">
-                    Meticulously designed, constructed, and hand-fitted in Altrincham by a certified perfectionist. No shortcuts, just flawless execution.
+                <p class="text-xs sm:text-sm md:text-base text-slate-300 max-w-xl mx-auto mb-14 font-light leading-relaxed">
+                    Custom designed and fully installed across Mumbai by expert team. Get top quality finishing with zero hassle.
                 </p>
-                <div class="flex flex-col sm:flex-row items-center justify-center gap-5">
-                    <a href="#contact" class="w-full sm:w-auto px-10 py-4 bg-brass-600 text-white text-xs font-semibold tracking-widest uppercase hover:bg-brass-700 transition-all rounded-sm shadow-xl hover:-translate-y-0.5 duration-300">
-                        Book A Design Visit
+                <!-- Expanded padded button containers to prevent overlapping or thin styling -->
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-6 max-w-md mx-auto sm:max-w-none">
+                    <a href="#contact" class="w-full sm:w-auto px-10 py-5 bg-brass-600 text-white text-xs font-bold tracking-widest uppercase hover:bg-brass-700 transition-all rounded-sm shadow-xl hover:-translate-y-0.5 duration-300 text-center">
+                        Book Free Site Visit
                     </a>
-                    <a href="#portfolio" class="w-full sm:w-auto px-10 py-4 border border-white/30 text-white text-xs font-semibold tracking-widest uppercase hover:bg-white hover:text-charcoal-900 transition-all rounded-sm duration-300">
-                        View Portfolio
+                    <a href="#portfolio" class="w-full sm:w-auto px-10 py-5 border-2 border-white text-white text-xs font-bold tracking-widest uppercase hover:bg-white hover:text-charcoal-900 transition-all rounded-sm duration-300 text-center">
+                        View Our Work
                     </a>
                 </div>
             </div>
         </section>
 
-        <!-- TRUST METRICS BAND WITH FLOATING BADGES -->
-        <section class="bg-charcoal-900 border-t border-white/5 py-10 px-6 relative z-20">
-            <div class="max-w-7xl mx-auto flex flex-wrap justify-around items-center gap-y-8 text-center">
-                <div class="opacity-0 animate-fade-in-up animate-delay-1 bg-white/5 border border-white/10 px-6 py-4 rounded-sm min-w-[220px] backdrop-blur-sm">
-                    <div class="text-2xl md:text-3xl font-serif text-brass-600 font-semibold">5.0 ⭐⭐⭐⭐⭐</div>
-                    <div class="text-[11px] tracking-widest uppercase text-slate-400 mt-1.5 font-medium">22 Verified Google Reviews</div>
+        <!-- PROJECT STATISTICS -->
+        <section class="bg-charcoal-900 border-t border-white/5 py-12 px-6 relative z-20">
+            <div class="max-w-7xl mx-auto grid grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+                <div class="opacity-0 animate-fade-in-up animate-delay-1 bg-white/5 border border-white/10 px-4 py-6 sm:py-8 rounded-sm backdrop-blur-sm">
+                    <div class="text-2xl sm:text-3xl md:text-4xl font-serif text-brass-600 font-bold">5.0 ★★★★★</div>
+                    <div class="text-[10px] sm:text-[11px] tracking-widest uppercase text-slate-400 mt-2 font-semibold">22+ Happy Client Reviews</div>
                 </div>
-                <div class="h-10 w-px bg-white/10 hidden lg:block"></div>
-                <div class="opacity-0 animate-fade-in-up animate-delay-2 bg-white/5 border border-white/10 px-6 py-4 rounded-sm min-w-[220px] backdrop-blur-sm">
-                    <div class="text-2xl md:text-3xl font-serif text-brass-600 font-semibold">10+ Years</div>
-                    <div class="text-[11px] tracking-widest uppercase text-slate-400 mt-1.5 font-medium">Experience & Trust</div>
+                <div class="opacity-0 animate-fade-in-up animate-delay-1 bg-white/5 border border-white/10 px-4 py-6 sm:py-8 rounded-sm backdrop-blur-sm">
+                    <div class="text-2xl sm:text-3xl md:text-4xl font-serif text-brass-600 font-bold">500+</div>
+                    <div class="text-[10px] sm:text-[11px] tracking-widest uppercase text-slate-400 mt-2 font-semibold">Total Projects Done</div>
                 </div>
-                <div class="h-10 w-px bg-white/10 hidden lg:block"></div>
-                <div class="opacity-0 animate-fade-in-up animate-delay-3 bg-white/5 border border-white/10 px-6 py-4 rounded-sm min-w-[220px] backdrop-blur-sm">
-                    <div class="text-2xl md:text-3xl font-serif text-brass-600 font-semibold">Bespoke</div>
-                    <div class="text-[11px] tracking-widest uppercase text-slate-400 mt-1.5 font-medium">100% Handmade Cabinetry</div>
+                <div class="opacity-0 animate-fade-in-up animate-delay-2 bg-white/5 border border-white/10 px-4 py-6 sm:py-8 rounded-sm backdrop-blur-sm">
+                    <div class="text-2xl sm:text-3xl md:text-4xl font-serif text-brass-600 font-bold">15+ Years</div>
+                    <div class="text-[10px] sm:text-[11px] tracking-widest uppercase text-slate-400 mt-2 font-semibold">Experience in Industry</div>
+                </div>
+                <div class="opacity-0 animate-fade-in-up animate-delay-3 bg-white/5 border border-white/10 px-4 py-6 sm:py-8 rounded-sm backdrop-blur-sm">
+                    <div class="text-2xl sm:text-3xl md:text-4xl font-serif text-brass-600 font-bold">98%</div>
+                    <div class="text-[10px] sm:text-[11px] tracking-widest uppercase text-slate-400 mt-2 font-semibold">On-Time Work Completion</div>
                 </div>
             </div>
         </section>
 
-        <!-- THE CRAFTSMAN / ABOUT -->
-        <section id="about" class="py-24 px-6 lg:px-12 max-w-7xl mx-auto">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <!-- ABOUT SECTION -->
+        <section id="about" class="py-24 px-6 md:px-12 max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
                 <div class="lg:col-span-5 relative group">
                     <div class="aspect-[4/5] bg-charcoal-800 rounded-sm overflow-hidden shadow-2xl">
-                        <img src="p2.jpg" alt="Precision Craftsmanship Detail" class="w-full h-full object-cover group-hover:scale-102 transition-transform duration-700">
+                        <img src="p2.jpg" alt="Interior Team At Work" class="w-full h-full object-cover group-hover:scale-102 transition-transform duration-700">
                     </div>
-                    <div class="absolute -bottom-6 -right-6 w-48 h-48 bg-brass-100 -z-10 rounded-sm hidden sm:block transition-all group-hover:translate-x-2 group-hover:translate-y-2 duration-500"></div>
+                    <div class="absolute -bottom-6 -right-6 w-48 h-48 bg-brass-100 -z-10 rounded-sm hidden sm:block"></div>
                 </div>
-                <div class="lg:col-span-7 lg:pl-8">
-                    <span class="text-xs font-semibold tracking-[0.2em] uppercase text-brass-600 block mb-3">Meet Joel Doohan</span>
-                    <h2 class="text-3xl md:text-5xl font-serif text-charcoal-900 tracking-wide mb-6">A rare find: A professional installer who realizes your dreams.</h2>
-                    <div class="space-y-6 text-charcoal-800 text-sm md:text-base font-light leading-relaxed">
+                <div class="lg:col-span-7 lg:pl-6">
+                    <span class="text-xs font-semibold tracking-[0.2em] uppercase text-brass-600 block mb-3">Who We Are</span>
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-serif text-charcoal-900 tracking-wide mb-6">Expert team to design your premium dream spaces.</h2>
+                    <div class="space-y-6 text-charcoal-800 text-sm sm:text-base font-light leading-relaxed">
                         <p>
-                            Based in Timperley, Altrincham, Joel Doohan has built a reputation over the past decade as a master kitchen craftsman. Pointing out high-street corporate suppliers who drop prefabricated units at your door, Joel treats every kitchen renovation as a unique piece of layout architecture.
+                            We specialize in planning, manufacturing, and setting up premium modular kitchens and elegant home interiors. We avoid standard cheap readymade setups and make sure every corner matches your needs perfectly.
                         </p>
-                        <blockquote class="border-l-2 border-brass-600 pl-4 my-6 italic text-charcoal-900 font-serif text-lg bg-brass-100/50 py-3 pr-2">
-                            "He listens to exactly what you want, brings invaluable spatial design expertise to the table, and executes with precision detail."
+                        <blockquote class="border-l-2 border-brass-600 pl-4 my-6 italic text-charcoal-900 font-serif text-lg bg-brass-100/50 py-4 pr-3">
+                            "We listen to your ideas, plan smart spacing solutions, and deliver high-quality work with neat finishing."
                         </blockquote>
                         <p>
-                            From rerouting plumbing and intricate electrical configuration to implementing custom cabinet spray-finishes, nothing is too much trouble. It is exactly why local homeowners choose to wait months just to secure Joel's dedicated personal service.
+                            From basic carpentry updates to managing full plumbing, electrical adjustments, and clean kitchen renovations—our specialized local team takes care of everything from scratch.
                         </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- SERVICES / SPECIALITIES -->
-        <section id="services" class="bg-charcoal-900 text-white py-24 px-6 lg:px-12">
+        <!-- WHY CHOOSE US SECTION (SIMPLIFIED WORDS) -->
+        <section id="why-choose-us" class="bg-brass-100 py-24 px-6 md:px-12 border-t border-b border-charcoal-900/5">
             <div class="max-w-7xl mx-auto">
                 <div class="text-center max-w-2xl mx-auto mb-16">
-                    <span class="text-xs font-semibold tracking-[0.2em] uppercase text-brass-600 block mb-3">Our Expertise</span>
-                    <h2 class="text-3xl md:text-5xl font-serif tracking-wide">Bespoke Solutions From Concept To Completion</h2>
+                    <span class="text-xs font-semibold tracking-[0.2em] uppercase text-brass-600 block mb-3">Our Benefits</span>
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-serif text-charcoal-900 tracking-wide">Why Local Homeowners Choose Us</h2>
                 </div>
                 
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <!-- Service 1 -->
-                    <div class="bg-charcoal-800 p-8 border border-white/5 rounded-sm hover:border-brass-600/40 hover:-translate-y-1 transition-all duration-300 group">
-                        <div class="text-brass-600 text-3xl font-serif mb-6 group-hover:translate-x-1 transition-transform duration-300">01</div>
-                        <h3 class="text-xl font-serif mb-4 tracking-wide">Bespoke Kitchen Design</h3>
-                        <p class="text-sm text-slate-300 font-light leading-relaxed">
-                            Complete spatial redesigning of small layouts, breakfast rooms, or vast open plan spaces. Expert sourcing of top-tier integrated appliances.
-                        </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-brass-50 p-8 border border-charcoal-900/5 rounded-sm shadow-sm">
+                        <div class="w-10 h-10 bg-charcoal-900 text-brass-600 flex items-center justify-center font-serif text-lg rounded-sm mb-6">✓</div>
+                        <h3 class="text-lg font-serif font-semibold text-charcoal-900 mb-3 tracking-wide">Best Quality Materials</h3>
+                        <p class="text-xs sm:text-sm text-charcoal-800 font-light leading-relaxed">We use waterproof plywood, anti-rust hinges, and strong stone tops that last for a long time without complaints.</p>
                     </div>
-                    <!-- Service 2 -->
-                    <div class="bg-charcoal-800 p-8 border border-white/5 rounded-sm hover:border-brass-600/40 hover:-translate-y-1 transition-all duration-300 group">
-                        <div class="text-brass-600 text-3xl font-serif mb-6 group-hover:translate-x-1 transition-transform duration-300">02</div>
-                        <h3 class="text-xl font-serif mb-4 tracking-wide">Inframe & Shaker Joinery</h3>
-                        <p class="text-sm text-slate-300 font-light leading-relaxed">
-                            Handmade solid wood structures featuring elegant traditional cabinetry details, beautiful flush drawers, and custom cabinet spraying services.
-                        </p>
+                    <div class="bg-brass-50 p-8 border border-charcoal-900/5 rounded-sm shadow-sm">
+                        <div class="w-10 h-10 bg-charcoal-900 text-brass-600 flex items-center justify-center font-serif text-lg rounded-sm mb-6">✓</div>
+                        <h3 class="text-lg font-serif font-semibold text-charcoal-900 mb-3 tracking-wide">Customized Layout Designs</h3>
+                        <p class="text-xs sm:text-sm text-charcoal-800 font-light leading-relaxed">No generic copy paste work. Every cabinet height, drawer, and shelf option is made to fit your exact storage needs.</p>
                     </div>
-                    <!-- Service 3 -->
-                    <div class="bg-charcoal-800 p-8 border border-white/5 rounded-sm hover:border-brass-600/40 hover:-translate-y-1 transition-all duration-300 group">
-                        <div class="text-brass-600 text-3xl font-serif mb-6 group-hover:translate-x-1 transition-transform duration-300">03</div>
-                        <h3 class="text-xl font-serif mb-4 tracking-wide">Utility & Media Spaces</h3>
-                        <p class="text-sm text-slate-300 font-light leading-relaxed">
-                            Extending meticulous attention to detail into bespoke utility room fitments, hall furniture, structural storage systems, and tricky custom TV cabinetry.
-                        </p>
+                    <div class="bg-brass-50 p-8 border border-charcoal-900/5 rounded-sm shadow-sm">
+                        <div class="w-10 h-10 bg-charcoal-900 text-brass-600 flex items-center justify-center font-serif text-lg rounded-sm mb-6">✓</div>
+                        <h3 class="text-lg font-serif font-semibold text-charcoal-900 mb-3 tracking-wide">On-Time Project Delivery</h3>
+                        <p class="text-xs sm:text-sm text-charcoal-800 font-light leading-relaxed">We respect our promises and ensure that your kitchen or room renovation gets fully completed on the decided date.</p>
+                    </div>
+                    <div class="bg-brass-50 p-8 border border-charcoal-900/5 rounded-sm shadow-sm">
+                        <div class="w-10 h-10 bg-charcoal-900 text-brass-600 flex items-center justify-center font-serif text-lg rounded-sm mb-6">✓</div>
+                        <h3 class="text-lg font-serif font-semibold text-charcoal-900 mb-3 tracking-wide">Proper Warranty Support</h3>
+                        <p class="text-xs sm:text-sm text-charcoal-800 font-light leading-relaxed">Get genuine long term backup warranty on all channels, custom hinges, and structural kitchen installations.</p>
+                    </div>
+                    <div class="bg-brass-50 p-8 border border-charcoal-900/5 rounded-sm shadow-sm">
+                        <div class="w-10 h-10 bg-charcoal-900 text-brass-600 flex items-center justify-center font-serif text-lg rounded-sm mb-6">✓</div>
+                        <h3 class="text-lg font-serif font-semibold text-charcoal-900 mb-3 tracking-wide">Neat & Clean Workmanship</h3>
+                        <p class="text-xs sm:text-sm text-charcoal-800 font-light leading-relaxed">Our skilled team ensures proper cutting alignment, smooth drawer movement, and neat edge-band finishing details.</p>
+                    </div>
+                    <div class="bg-brass-50 p-8 border border-charcoal-900/5 rounded-sm shadow-sm">
+                        <div class="w-10 h-10 bg-charcoal-900 text-brass-600 flex items-center justify-center font-serif text-lg rounded-sm mb-6">✓</div>
+                        <h3 class="text-lg font-serif font-semibold text-charcoal-900 mb-3 tracking-wide">Full End-to-End Service</h3>
+                        <p class="text-xs sm:text-sm text-charcoal-800 font-light leading-relaxed">From doing plumbing changes and electric wiring fixes to smooth wall paint touch-ups, we manage everything from start to finish.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- REAL CLIENT PORTFOLIO ARCHITECTURE -->
-        <section id="portfolio" class="py-24 px-6 lg:px-12 max-w-7xl mx-auto">
+        <!-- DETAILED SERVICES SECTION (SIMPLIFIED & HIGHLY RELEVANT FOR INDIAN BUSINESSES) -->
+        <section id="services" class="py-24 px-6 md:px-12 max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-20">
+                <span class="text-xs font-semibold tracking-[0.2em] uppercase text-brass-600 block mb-3">What We Provide</span>
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-serif text-charcoal-900 tracking-wide">Our Complete Work Specialities</h2>
+            </div>
+
+            <div class="space-y-16">
+                <!-- Kitchen Block -->
+                <div class="border-b border-charcoal-900/10 pb-12">
+                    <h3 class="text-2xl font-serif text-brass-700 uppercase tracking-widest mb-6 font-semibold">01. Premium Modular Kitchens</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div class="bg-white p-6 rounded-sm border border-charcoal-900/5 shadow-sm">
+                            <h4 class="font-serif text-lg font-semibold mb-2">Modern Modular Kitchens</h4>
+                            <p class="text-xs sm:text-sm text-charcoal-800 font-light leading-relaxed">Clean profile handles, acrylic setups, soft-closing multi basket drawers, and bright under-cabinet profile lighting.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-sm border border-charcoal-900/5 shadow-sm">
+                            <h4 class="font-serif text-lg font-semibold mb-2">Traditional Indian Styles</h4>
+                            <p class="text-xs sm:text-sm text-charcoal-800 font-light leading-relaxed">Sturdy stone layout matching, standard chimney integration setups, and simple heavy-weight steel wire baskets.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-sm border border-charcoal-900/5 shadow-sm">
+                            <h4 class="font-serif text-lg font-semibold mb-2">Luxury Premium Finishes</h4>
+                            <p class="text-xs sm:text-sm text-charcoal-800 font-light leading-relaxed">High-end smooth PU painted sheets, beautiful thick quartz stone counters, and top luxury matte hardware fittings.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interiors Block -->
+                <div class="border-b border-charcoal-900/10 pb-12">
+                    <h3 class="text-2xl font-serif text-brass-700 uppercase tracking-widest mb-6 font-semibold">02. Full Home Interior Designing</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div class="bg-white p-6 rounded-sm border border-charcoal-900/5 shadow-sm">
+                            <h4 class="font-serif text-lg font-semibold mb-2">Custom Bed Room Wardrobes</h4>
+                            <p class="text-xs sm:text-sm text-charcoal-800 font-light leading-relaxed">Floor-to-ceiling wooden cupboards with smart internal drawers, sliding paths, and dedicated dressing mirror units.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-sm border border-charcoal-900/5 shadow-sm">
+                            <h4 class="font-serif text-lg font-semibold mb-2">Living Room TV Units</h4>
+                            <p class="text-xs sm:text-sm text-charcoal-800 font-light leading-relaxed">Elegant wall panels for large LED TVs with floating open display boxes and proper hidden holes for wiring management.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-sm border border-charcoal-900/5 shadow-sm">
+                            <h4 class="font-serif text-lg font-semibold mb-2">Home Office & Study Tables</h4>
+                            <p class="text-xs sm:text-sm text-charcoal-800 font-light leading-relaxed">Space-saving compact tables with multiple lockable storage spaces, keyboard trays, and neat corner structures.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Renovation Block -->
+                <div>
+                    <h3 class="text-2xl font-serif text-brass-700 uppercase tracking-widest mb-6 font-semibold">03. Renovation & Spacing Repairs</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div class="bg-white p-6 rounded-sm border border-charcoal-900/5 shadow-sm">
+                            <h4 class="font-serif text-lg font-semibold mb-2">Full Flat Renovation Services</h4>
+                            <p class="text-xs sm:text-sm text-charcoal-800 font-light leading-relaxed">Breaking down unwanted wall barriers, installing new floor tiles, and upgrading old flats with new fresh modern layouts.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-sm border border-charcoal-900/5 shadow-sm">
+                            <h4 class="font-serif text-lg font-semibold mb-2">Kitchen Remodeling Updates</h4>
+                            <p class="text-xs sm:text-sm text-charcoal-800 font-light leading-relaxed">Fixing leakages, replacing old broken granite blocks, and shifting gas pipe tracks for better safety and styling layout.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-sm border border-charcoal-900/5 shadow-sm">
+                            <h4 class="font-serif text-lg font-semibold mb-2">Space Optimization Layouts</h4>
+                            <p class="text-xs sm:text-sm text-charcoal-800 font-light leading-relaxed">Turning tiny rooms or small utility spots into highly functional smart storage sections with clever hardware use.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA SECTION 1 -->
+        <div class="bg-charcoal-900 text-white py-12 px-6 text-center border-b border-white/5">
+            <h3 class="font-serif text-2xl tracking-wide mb-4 text-brass-100">Want to check space potential for your own kitchen or room?</h3>
+            <a href="#contact" class="inline-block border border-brass-600 text-brass-100 hover:bg-brass-600 hover:text-white transition-colors uppercase text-xs tracking-widest font-semibold px-8 py-4.5 rounded-sm">Get Free Estimation Call</a>
+        </div>
+
+        <!-- 7-STEP WORK PROCESS SECTION -->
+        <section id="process" class="bg-charcoal-900 text-white py-24 px-6 md:px-12">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center max-w-2xl mx-auto mb-20">
+                    <span class="text-xs font-semibold tracking-[0.2em] uppercase text-brass-600 block mb-3">How We Execute</span>
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-serif tracking-wide text-brass-50">Our Simple 7-Step Step Work Process</h2>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-charcoal-800 p-6 border border-white/5 rounded-sm">
+                        <div class="text-brass-600 font-serif text-4xl mb-4 font-bold">01</div>
+                        <h4 class="text-base font-semibold tracking-wide mb-2">Free Consultation</h4>
+                        <p class="text-xs text-slate-400 font-light leading-relaxed">Simple initial call or store meet to list out your room needs, core ideas, and budget setup parameters.</p>
+                    </div>
+                    <div class="bg-charcoal-800 p-6 border border-white/5 rounded-sm">
+                        <div class="text-brass-600 font-serif text-4xl mb-4 font-bold">02</div>
+                        <h4 class="text-base font-semibold tracking-wide mb-2">Expert Site Visit</h4>
+                        <p class="text-xs text-slate-400 font-light leading-relaxed">Our main manager visits your flat to take absolute tape measurements of wall heights and pipe layout tracks.</p>
+                    </div>
+                    <div class="bg-charcoal-800 p-6 border border-white/5 rounded-sm">
+                        <div class="text-brass-600 font-serif text-4xl mb-4 font-bold">03</div>
+                        <h4 class="text-base font-semibold tracking-wide mb-2">Design & Planning</h4>
+                        <p class="text-xs text-slate-400 font-light leading-relaxed">Creating standard easy-to-read room plans that show where exactly each cabinet basket and tall unit fits.</p>
+                    </div>
+                    <div class="bg-charcoal-800 p-6 border border-white/5 rounded-sm">
+                        <div class="text-brass-600 font-serif text-4xl mb-4 font-bold">04</div>
+                        <h4 class="text-base font-semibold tracking-wide mb-2">Material Selection</h4>
+                        <p class="text-xs text-slate-400 font-light leading-relaxed">You check out real hardware pieces, color sheet laminates, and stone tile designs to select what goes inside.</p>
+                    </div>
+                    <div class="bg-charcoal-800 p-6 border border-white/5 rounded-sm">
+                        <div class="text-brass-600 font-serif text-4xl mb-4 font-bold">05</div>
+                        <h4 class="text-base font-semibold tracking-wide mb-2">Local Manufacturing</h4>
+                        <p class="text-xs text-slate-400 font-light leading-relaxed">Cutting wood sheets and fixing edge bands neatly inside our main local workshop area to avoid dust at your home.</p>
+                    </div>
+                    <div class="bg-charcoal-800 p-6 border border-white/5 rounded-sm">
+                        <div class="text-brass-600 font-serif text-4xl mb-4 font-bold">06</div>
+                        <h4 class="text-base font-semibold tracking-wide mb-2">Neat Installation</h4>
+                        <p class="text-xs text-slate-400 font-light leading-relaxed">Assembling all framework pieces, leveling drawers, and fixing top stone counters at your flat with clean setup rules.</p>
+                    </div>
+                    <div class="bg-charcoal-800 p-6 border border-white/5 rounded-sm sm:col-span-2 lg:col-span-2">
+                        <div class="text-brass-600 font-serif text-4xl mb-4 font-bold">07</div>
+                        <h4 class="text-base font-semibold tracking-wide mb-2">Final Inspection & Handover</h4>
+                        <p class="text-xs text-slate-400 font-light leading-relaxed">A complete test check walkthrough to verify that every cabinet box hinge and alignment works perfectly smoothly before handing over the keys.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PORTFOLIO SECTION -->
+        <section id="portfolio" class="py-24 px-6 md:px-12 max-w-7xl mx-auto">
             <div class="flex flex-col md:flex-row md:items-end justify-between mb-16">
                 <div>
-                    <span class="text-xs font-semibold tracking-[0.2em] uppercase text-brass-600 block mb-3">Craftsmanship Showcase</span>
-                    <h2 class="text-3xl md:text-5xl font-serif text-charcoal-900 tracking-wide">Selected Renovations</h2>
+                    <span class="text-xs font-semibold tracking-[0.2em] uppercase text-brass-600 block mb-3">Our Work Showcase</span>
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-serif text-charcoal-900 tracking-wide">Real Completed Projects</h2>
                 </div>
-                <p class="text-sm text-charcoal-800 max-w-md font-light leading-relaxed mt-4 md:mt-0">
-                    Real transformation photography extracted directly from our highly praised local projects. Click any project to discover our signature finishes and impeccable craftsmanship.
+                <p class="text-xs sm:text-sm text-charcoal-800 max-w-md font-light leading-relaxed mt-4 md:mt-0">
+                    Real, actual field photographs from our recent successful home site renovations. Click any item card to see full layout galleries.
                 </p>
             </div>
 
-            <!-- MAIN PREVIEW GRID -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                
-                <!-- Project 1: Paul Bolton -->
+                <!-- Project 1 -->
                 <div class="group cursor-pointer" onclick="openModal('modal-paul')">
                     <div class="aspect-[4/3] w-full bg-charcoal-800 overflow-hidden rounded-sm relative shadow-md border border-charcoal-900/5">
-                        <img src="p1.jpg" alt="Paul Bolton Kitchen Renovation" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <img src="p1.jpg" alt="Kitchen Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                         <div class="absolute inset-0 bg-charcoal-900/70 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col items-center justify-center p-4 duration-300">
-                            <span class="px-4 py-2 border border-white text-white text-[10px] tracking-widest uppercase font-medium mb-2 transition-transform duration-300 translate-y-2 group-hover:translate-y-0">View Project Gallery</span>
-                            <span class="text-[11px] text-brass-100 font-light text-center">Exposed Brick & Navy Island Fit (6 Photos)</span>
+                            <span class="px-5 py-3 border border-white text-white text-[10px] tracking-widest uppercase font-medium mb-2">Open Project Images</span>
+                            <span class="text-[11px] text-brass-100 font-light text-center">Dual Tone Cabinet Setup (6 Photos)</span>
                         </div>
                     </div>
-                    <h3 class="font-serif text-xl text-charcoal-900 mt-4 tracking-wide group-hover:text-brass-600 transition-colors">Contemporary Industrial & In-Frame Kitchen</h3>
-                    <p class="text-xs text-brass-600 uppercase tracking-widest mt-1 font-medium">Client: Paul Bolton • Sale District</p>
+                    <h3 class="font-serif text-xl text-charcoal-900 mt-4 tracking-wide group-hover:text-brass-600 transition-colors">Premium Modular Kitchen Layout</h3>
+                    <p class="text-xs text-brass-600 uppercase tracking-widest mt-1 font-medium">Site Area: Residential Project</p>
                 </div>
 
-                <!-- Project 2: Diane Lowes -->
+                <!-- Project 2 -->
                 <div class="group cursor-pointer" onclick="openModal('modal-diane')">
                     <div class="aspect-[4/3] w-full bg-charcoal-800 overflow-hidden rounded-sm relative shadow-md border border-charcoal-900/5">
-                        <img src="d1.jpg" alt="Diane Lowes Kitchen Renovation" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <img src="d1.jpg" alt="Curved Kitchen Island" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                         <div class="absolute inset-0 bg-charcoal-900/70 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col items-center justify-center p-4 duration-300">
-                            <span class="px-4 py-2 border border-white text-white text-[10px] tracking-widest uppercase font-medium mb-2 transition-transform duration-300 translate-y-2 group-hover:translate-y-0">View Project Gallery</span>
-                            <span class="text-[11px] text-brass-100 font-light text-center">Classic Curved Island Setup (5 Photos)</span>
+                            <span class="px-5 py-3 border border-white text-white text-[10px] tracking-widest uppercase font-medium mb-2">Open Project Images</span>
+                            <span class="text-[11px] text-brass-100 font-light text-center">Smooth Curved Top Island (5 Photos)</span>
                         </div>
                     </div>
-                    <h3 class="font-serif text-xl text-charcoal-900 mt-4 tracking-wide group-hover:text-brass-600 transition-colors">Classic Curved Shaker Kitchen</h3>
-                    <p class="text-xs text-brass-600 uppercase tracking-widest mt-1 font-medium">Client: Diane Lowes • Altrincham Suburbs</p>
+                    <h3 class="font-serif text-xl text-charcoal-900 mt-4 tracking-wide group-hover:text-brass-600 transition-colors">Classic Cream U-Shaped Kitchen</h3>
+                    <p class="text-xs text-brass-600 uppercase tracking-widest mt-1 font-medium">Site Area: Suburb Flat</p>
                 </div>
 
-                <!-- Project 3: Rebecca de Sauza -->
+                <!-- Project 3 -->
                 <div class="group cursor-pointer" onclick="openModal('modal-rebecca')">
                     <div class="aspect-[4/3] w-full bg-charcoal-800 overflow-hidden rounded-sm relative shadow-md border border-charcoal-900/5">
-                        <img src="r1.jpg" alt="Rebecca de Sauza Kitchen Renovation" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <img src="r1.jpg" alt="Minimalist Kitchen Layout" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                         <div class="absolute inset-0 bg-charcoal-900/70 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col items-center justify-center p-4 duration-300">
-                            <span class="px-4 py-2 border border-white text-white text-[10px] tracking-widest uppercase font-medium mb-2 transition-transform duration-300 translate-y-2 group-hover:translate-y-0">View Project Gallery</span>
-                            <span class="text-[11px] text-brass-100 font-light text-center">Minimalist Dark Base Design (3 Photos)</span>
+                            <span class="px-5 py-3 border border-white text-white text-[10px] tracking-widest uppercase font-medium mb-2">Open Project Images</span>
+                            <span class="text-[11px] text-brass-100 font-light text-center">Matte Charcoal Finish (3 Photos)</span>
                         </div>
                     </div>
-                    <h3 class="font-serif text-xl text-charcoal-900 mt-4 tracking-wide group-hover:text-brass-600 transition-colors">Modern Minimalist Contrast Suite</h3>
-                    <p class="text-xs text-brass-600 uppercase tracking-widest mt-1 font-medium">Client: Rebecca de Sauza • Timperley Project</p>
+                    <h3 class="font-serif text-xl text-charcoal-900 mt-4 tracking-wide group-hover:text-brass-600 transition-colors">Modern Minimalist Matte Kitchen</h3>
+                    <p class="text-xs text-brass-600 uppercase tracking-widest mt-1 font-medium">Site Area: Apartment Complex</p>
                 </div>
-
             </div>
         </section>
 
-        <!-- LIGHTBOX MODALS ARCHITECTURE (POPUP GRIDS) -->
-        <!-- Paul Bolton Full Modal -->
-        <div id="modal-paul" class="fixed inset-0 z-[100] hidden bg-charcoal-900/95 backdrop-blur-md flex items-center justify-center p-4 transition-all duration-300">
-            <div class="bg-brass-50 max-w-5xl w-full rounded-sm max-h-[85vh] overflow-y-auto p-6 md:p-10 relative shadow-2xl border border-charcoal-900/10">
-                <button onclick="closeModal('modal-paul')" class="absolute top-4 right-4 md:top-6 md:right-6 text-charcoal-900 hover:text-brass-600 text-3xl font-light transition-colors focus:outline-none">&times;</button>
-                <div class="mb-8 border-b border-charcoal-900/10 pb-4">
-                    <h4 class="font-serif text-2xl md:text-3xl text-charcoal-900 font-semibold">Paul Bolton Project Build</h4>
-                    <p class="text-xs text-brass-600 uppercase tracking-widest mt-1">Full Showcase — Featuring Custom Industrial Finishes & Utility Rerouting</p>
-                </div>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <div class="aspect-[4/3] rounded-sm overflow-hidden bg-charcoal-800 shadow-sm"><img src="p1.jpg" class="w-full h-full object-cover"></div>
-                    <div class="aspect-[4/3] rounded-sm overflow-hidden bg-charcoal-800 shadow-sm"><img src="p2.jpg" class="w-full h-full object-cover"></div>
-                    <div class="aspect-[4/3] rounded-sm overflow-hidden bg-charcoal-800 shadow-sm"><img src="p3.jpg" class="w-full h-full object-cover"></div>
-                    <div class="aspect-[4/3] rounded-sm overflow-hidden bg-charcoal-800 shadow-sm"><img src="p4.jpg" class="w-full h-full object-cover"></div>
-                    <div class="aspect-[4/3] rounded-sm overflow-hidden bg-charcoal-800 shadow-sm"><img src="p5.jpg" class="w-full h-full object-cover"></div>
-                    <div class="aspect-[4/3] rounded-sm overflow-hidden bg-charcoal-800 shadow-sm"><img src="p6.jpg" class="w-full h-full object-cover"></div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Diane Lowes Full Modal -->
-        <div id="modal-diane" class="fixed inset-0 z-[100] hidden bg-charcoal-900/95 backdrop-blur-md flex items-center justify-center p-4 transition-all duration-300">
-            <div class="bg-brass-50 max-w-5xl w-full rounded-sm max-h-[85vh] overflow-y-auto p-6 md:p-10 relative shadow-2xl border border-charcoal-900/10">
-                <button onclick="closeModal('modal-diane')" class="absolute top-4 right-4 md:top-6 md:right-6 text-charcoal-900 hover:text-brass-600 text-3xl font-light transition-colors focus:outline-none">&times;</button>
-                <div class="mb-8 border-b border-charcoal-900/10 pb-4">
-                    <h4 class="font-serif text-2xl md:text-3xl text-charcoal-900 font-semibold">Diane Lowes Project Build</h4>
-                    <p class="text-xs text-brass-600 uppercase tracking-widest mt-1">Full Showcase — Elegantly Crafted Curved Islands & Bespoke Traditional Shaker Styles</p>
-                </div>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <div class="aspect-[4/3] rounded-sm overflow-hidden bg-charcoal-800 shadow-sm"><img src="d1.jpg" class="w-full h-full object-cover"></div>
-                    <div class="aspect-[4/3] rounded-sm overflow-hidden bg-charcoal-800 shadow-sm"><img src="d2.jpg" class="w-full h-full object-cover"></div>
-                    <div class="aspect-[4/3] rounded-sm overflow-hidden bg-charcoal-800 shadow-sm"><img src="d3.jpg" class="w-full h-full object-cover"></div>
-                    <div class="aspect-[4/3] rounded-sm overflow-hidden bg-charcoal-800 shadow-sm"><img src="d4.jpg" class="w-full h-full object-cover"></div>
-                    <div class="aspect-[4/3] rounded-sm overflow-hidden bg-charcoal-800 shadow-sm"><img src="d5.jpg" class="w-full h-full object-cover"></div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Rebecca de Sauza Full Modal -->
-        <div id="modal-rebecca" class="fixed inset-0 z-[100] hidden bg-charcoal-900/95 backdrop-blur-md flex items-center justify-center p-4 transition-all duration-300">
-            <div class="bg-brass-50 max-w-5xl w-full rounded-sm max-h-[85vh] overflow-y-auto p-6 md:p-10 relative shadow-2xl border border-charcoal-900/10">
-                <button onclick="closeModal('modal-rebecca')" class="absolute top-4 right-4 md:top-6 md:right-6 text-charcoal-900 hover:text-brass-600 text-3xl font-light transition-colors focus:outline-none">&times;</button>
-                <div class="mb-8 border-b border-charcoal-900/10 pb-4">
-                    <h4 class="font-serif text-2xl md:text-3xl text-charcoal-900 font-semibold">Rebecca de Sauza Project Build</h4>
-                    <p class="text-xs text-brass-600 uppercase tracking-widest mt-1">Full Showcase — Handle-less Matte Minimalist Custom Suite</p>
-                </div>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <div class="aspect-[4/3] rounded-sm overflow-hidden bg-charcoal-800 shadow-sm"><img src="r1.jpg" class="w-full h-full object-cover"></div>
-                    <div class="aspect-[4/3] rounded-sm overflow-hidden bg-charcoal-800 shadow-sm"><img src="r2.jpg" class="w-full h-full object-cover"></div>
-                    <div class="aspect-[4/3] rounded-sm overflow-hidden bg-charcoal-800 shadow-sm"><img src="r3.jpg" class="w-full h-full object-cover"></div>
-                </div>
-            </div>
-        </div>
-
-        <!-- REAL CLIENT TESTIMONIALS -->
-        <section id="reviews" class="bg-brass-100 py-24 px-6 lg:px-12">
-            <div class="max-w-7xl mx-auto">
+        <!-- BEFORE & AFTER VISUAL SECTION -->
+        <section class="bg-brass-100 py-24 px-6 md:px-12 border-t border-b border-charcoal-900/5">
+            <div class="max-w-4xl mx-auto">
                 <div class="text-center max-w-2xl mx-auto mb-16">
-                    <span class="text-xs font-semibold tracking-[0.2em] uppercase text-brass-600 block mb-3">Word of Mouth</span>
-                    <h2 class="text-3xl md:text-5xl font-serif text-charcoal-900 tracking-wide">Trusted By Generations Of Homeowners</h2>
+                    <span class="text-xs font-semibold tracking-[0.2em] uppercase text-brass-600 block mb-3">Work Impact</span>
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-serif text-charcoal-900 tracking-wide">Real Room Transformations</h2>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <!-- Review 1 -->
-                    <div class="bg-brass-50 p-8 rounded-sm shadow-sm border border-charcoal-900/5 flex flex-col justify-between hover:shadow-md transition-shadow duration-300">
-                        <div>
-                            <div class="text-brass-600 tracking-widest text-sm mb-4">⭐⭐⭐⭐•</div>
-                            <p class="text-charcoal-800 text-sm font-light italic leading-relaxed mb-6">
-                                "Joel recently fitted our new kitchen and utility room and we are absolutely over the moon with the end result. His knowledge was superb and attention to detail was incredible and absolutely nothing was too much trouble for him. Highly recommend to anyone needing a high quality kitchen fit."
-                            </p>
-                        </div>
-                        <div class="border-t border-charcoal-900/10 pt-4">
-                            <h4 class="font-semibold text-xs tracking-wider uppercase text-charcoal-900">Paul Bolton</h4>
-                            <p class="text-[10px] text-brass-600 tracking-widest uppercase mt-0.5">New Kitchen & Utility Room Fit</p>
-                        </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-brass-50 p-6 sm:p-8 rounded-sm border border-charcoal-900/5 shadow-md">
+                    <div>
+                        <span class="text-[10px] uppercase font-bold text-brass-600 tracking-widest block mb-2">Site Upgrade Breakdown</span>
+                        <h4 class="font-serif text-2xl text-charcoal-900 mb-4">Old Damaged Counter to Modern Kitchen</h4>
+                        <p class="text-xs sm:text-sm text-charcoal-800 font-light leading-relaxed mb-6">
+                            This kitchen had leaking lines, loose board cupboards, and bad space wastage points. Our team removed old wall dividers, fitted new anti moisture frameworks, and put smooth handle-less drawer baskets.
+                        </p>
+                        <a href="#contact" class="inline-block text-xs uppercase font-semibold tracking-widest text-charcoal-900 border-b border-brass-600 pb-1 hover:text-brass-600 transition-colors">Check Your Kitchen Remodeling Cost &rarr;</a>
                     </div>
-                    <!-- Review 2 -->
-                    <div class="bg-brass-50 p-8 rounded-sm shadow-sm border border-charcoal-900/5 flex flex-col justify-between hover:shadow-md transition-shadow duration-300">
-                        <div>
-                            <div class="text-brass-600 tracking-widest text-sm mb-4">⭐⭐⭐⭐⭐</div>
-                            <p class="text-charcoal-800 text-sm font-light italic leading-relaxed mb-6">
-                                "Joel is a complete perfectionist where nothing is too much trouble. He refitted our small kitchen and breakfast room in a different layout so plumbing and electrics etc had to be rerouted. Joel's attention to detail and workmanship show in the finished job, we are so pleased. It was worth the wait."
-                            </p>
+                    <div class="space-y-4">
+                        <div class="relative rounded-sm overflow-hidden shadow-md group">
+                            <img src="p3.jpg" class="w-full h-48 object-cover filter grayscale contrast-125 opacity-70">
+                            <span class="absolute top-3 left-3 bg-charcoal-900 text-white text-[10px] tracking-widest uppercase px-2.5 py-1 font-semibold">Before Renovation</span>
                         </div>
-                        <div class="border-t border-charcoal-900/10 pt-4">
-                            <h4 class="font-semibold text-xs tracking-wider uppercase text-charcoal-900">Jennifer Hepburn</h4>
-                            <p class="text-[10px] text-brass-600 tracking-widest uppercase mt-0.5">Complete Structural Layout Redesign</p>
-                        </div>
-                    </div>
-                    <!-- Review 3 -->
-                    <div class="bg-brass-50 p-8 rounded-sm shadow-sm border border-charcoal-900/5 flex flex-col justify-between hover:shadow-md transition-shadow duration-300">
-                        <div>
-                            <div class="text-brass-600 tracking-widest text-sm mb-4">⭐⭐⭐⭐⭐</div>
-                            <p class="text-charcoal-800 text-sm font-light italic leading-relaxed mb-6">
-                                "We had to wait until the end of August before he could begin our kitchen. It was definitely worth the wait. Joel worked alongside us to design our kitchen where his experience and knowledge were invaluable. He handmade our Bespoke kitchen with incredible Craftsmanship."
-                            </p>
-                        </div>
-                        <div class="border-t border-charcoal-900/10 pt-4">
-                            <h4 class="font-semibold text-xs tracking-wider uppercase text-charcoal-900">Ian & Irene Smallwood</h4>
-                            <p class="text-[10px] text-brass-600 tracking-widest uppercase mt-0.5">Handmade Bespoke Installation</p>
+                        <div class="relative rounded-sm overflow-hidden shadow-md group border-2 border-brass-600">
+                            <img src="p1.jpg" class="w-full h-52 object-cover">
+                            <span class="absolute top-3 left-3 bg-brass-600 text-white text-[10px] tracking-widest uppercase px-2.5 py-1 font-semibold">After Clean Handover</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- LEAD CAPTURE FORM -->
-        <section id="contact" class="py-24 px-6 lg:px-12 max-w-4xl mx-auto">
-            <div class="bg-charcoal-900 text-white rounded-sm p-8 md:p-12 shadow-2xl relative overflow-hidden">
+        <!-- MATERIALS SHOWCASE SECTION -->
+        <section id="materials" class="bg-charcoal-900 text-white py-24 px-6 md:px-12">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center max-w-2xl mx-auto mb-20">
+                    <span class="text-xs font-semibold tracking-[0.2em] uppercase text-brass-600 block mb-3">Our Quality Standard</span>
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-serif tracking-wide text-brass-50">High-Grade Materials We Use</h2>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-charcoal-800 p-8 border border-white/5 rounded-sm">
+                        <span class="text-xs text-brass-600 uppercase font-bold tracking-widest block mb-2">Core Framework</span>
+                        <h4 class="font-serif text-lg mb-3 tracking-wide text-white">Waterproof Marine Plywood</h4>
+                        <p class="text-xs sm:text-sm text-slate-400 font-light leading-relaxed">No cheap particle mdf board sheets. We use high density waterproof marine ply that guards cabinets against moisture and swelling problems.</p>
+                    </div>
+                    <div class="bg-charcoal-800 p-8 border border-white/5 rounded-sm">
+                        <span class="text-xs text-brass-600 uppercase font-bold tracking-widest block mb-2">Modern Finish</span>
+                        <h4 class="font-serif text-lg mb-3 tracking-wide text-white">High Gloss Acrylic Sheets</h4>
+                        <p class="text-xs sm:text-sm text-slate-400 font-light leading-relaxed">Shiny mirror finish layers that are easy to clean with a wet cloth, providing a glossy modern feel to your front doors.</p>
+                    </div>
+                    <div class="bg-charcoal-800 p-8 border border-white/5 rounded-sm">
+                        <span class="text-xs text-brass-600 uppercase font-bold tracking-widest block mb-2">Luxury Shutters</span>
+                        <h4 class="font-serif text-lg mb-3 tracking-wide text-white">Premium PU Painted Finish</h4>
+                        <p class="text-xs sm:text-sm text-slate-400 font-light leading-relaxed">Liquid liquid spraying method that coats wooden cabinet shutter frames in a beautiful smooth, jointless colored layer.</p>
+                    </div>
+                    <div class="bg-charcoal-800 p-8 border border-white/5 rounded-sm">
+                        <span class="text-xs text-brass-600 uppercase font-bold tracking-widest block mb-2">Heavy Kitchen Tops</span>
+                        <h4 class="font-serif text-lg mb-3 tracking-wide text-white">Solid Quartz Countertops</h4>
+                        <p class="text-xs sm:text-sm text-slate-400 font-light leading-relaxed">Strong anti-scratch stone platforms with clean molded borders to manage daily kitchen spice spills comfortably.</p>
+                    </div>
+                    <div class="bg-charcoal-800 p-8 border border-white/5 rounded-sm">
+                        <span class="text-xs text-brass-600 uppercase font-bold tracking-widest block mb-2">Channels & Hinges</span>
+                        <h4 class="font-serif text-lg mb-3 tracking-wide text-white">Premium Soft-Close Brands</h4>
+                        <p class="text-xs sm:text-sm text-slate-400 font-light leading-relaxed">Certified rustproof hydraulic hardware guides that close silently automatically, eliminating slamming noise completely.</p>
+                    </div>
+                    <div class="bg-charcoal-800 p-8 border border-white/5 rounded-sm">
+                        <span class="text-xs text-brass-600 uppercase font-bold tracking-widest block mb-2">Daily Maintenance</span>
+                        <h4 class="font-serif text-lg mb-3 tracking-wide text-white">Anti-Fingerprint Matte Laminates</h4>
+                        <p class="text-xs sm:text-sm text-slate-400 font-light leading-relaxed">Specialized non reflective external sheet variants that resist finger touch oily prints, cutting daily wiping maintenance work down.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ACCORDION FAQ SECTION (EASY UNDERSTANDING GENERATION) -->
+        <section class="bg-brass-100 py-24 px-6 md:px-12 border-t border-b border-charcoal-900/5">
+            <div class="max-w-3xl mx-auto">
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <span class="text-xs font-semibold tracking-[0.2em] uppercase text-brass-600 block mb-3">Common Doubts</span>
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-serif text-charcoal-900 tracking-wide">Frequently Asked Questions</h2>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="bg-brass-50 border border-charcoal-900/5 rounded-sm overflow-hidden shadow-sm">
+                        <button onclick="toggleFaq(1)" class="w-full px-6 py-5 text-left font-serif text-base sm:text-lg font-semibold text-charcoal-900 flex justify-between items-center focus:outline-none">
+                            <span>How much time does a full kitchen work take?</span>
+                            <span id="faq-icon-1" class="text-brass-600 transition-transform font-bold text-xl">+</span>
+                        </button>
+                        <div id="faq-ans-1" class="hidden px-6 pb-5 text-xs sm:text-sm text-charcoal-800 font-light leading-relaxed border-t border-charcoal-900/5 pt-4 bg-white/40">
+                            Making modular cabinet frames at our workshop facility takes around 3 to 4 weeks. The final alignment setup, stonework placement, and setting everything up at your flat takes about 7 to 12 working days.
+                        </div>
+                    </div>
+                    <div class="bg-brass-50 border border-charcoal-900/5 rounded-sm overflow-hidden shadow-sm">
+                        <button onclick="toggleFaq(2)" class="w-full px-6 py-5 text-left font-serif text-base sm:text-lg font-semibold text-charcoal-900 flex justify-between items-center focus:outline-none">
+                            <span>Do you provide warranty on your cabinet hardware fittings?</span>
+                            <span id="faq-icon-2" class="text-brass-600 transition-transform font-bold text-xl">+</span>
+                        </button>
+                        <div id="faq-ans-2" class="hidden px-6 pb-5 text-xs sm:text-sm text-charcoal-800 font-light leading-relaxed border-t border-charcoal-900/5 pt-4 bg-white/40">
+                            Yes, absolutely. All our premium soft-close basket channels, locks, and shutter hinges come with official company structural backup warranty support.
+                        </div>
+                    </div>
+                    <div class="bg-brass-50 border border-charcoal-900/5 rounded-sm overflow-hidden shadow-sm">
+                        <button onclick="toggleFaq(3)" class="w-full px-6 py-5 text-left font-serif text-base sm:text-lg font-semibold text-charcoal-900 flex justify-between items-center focus:outline-none">
+                            <span>Can we modify the drawers according to our own vessels?</span>
+                            <span id="faq-icon-3" class="text-brass-600 transition-transform font-bold text-xl">+</span>
+                        </button>
+                        <div id="faq-ans-3" class="hidden px-6 pb-5 text-xs sm:text-sm text-charcoal-800 font-light leading-relaxed border-t border-charcoal-900/5 pt-4 bg-white/40">
+                            Yes. We configure dedicated partition plates, spice racks, and heavy container bottle drawer alignments matching your daily family utensil usage fields exactly.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LOCAL AREA TARGET CLOUD (MUMBAI REGION FOCUS) -->
+        <section class="py-24 px-6 md:px-12 max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-xs font-semibold tracking-[0.2em] uppercase text-brass-600 block mb-3">Where We Serve</span>
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-serif text-charcoal-900 tracking-wide">Our Active Operational Locations</h2>
+            </div>
+            <div class="flex flex-wrap justify-center gap-3 max-w-3xl mx-auto">
+                <span class="bg-brass-100 border border-charcoal-900/5 px-5 py-2.5 text-xs font-semibold uppercase tracking-wider text-charcoal-900 rounded-sm">📍 Mumbai Central</span>
+                <span class="bg-brass-100 border border-charcoal-900/5 px-5 py-2.5 text-xs font-semibold uppercase tracking-wider text-charcoal-900 rounded-sm">📍 Thane West / East</span>
+                <span class="bg-brass-100 border border-charcoal-900/5 px-5 py-2.5 text-xs font-semibold uppercase tracking-wider text-charcoal-900 rounded-sm">📍 Navi Mumbai</span>
+                <span class="bg-brass-100 border border-charcoal-900/5 px-5 py-2.5 text-xs font-semibold uppercase tracking-wider text-charcoal-900 rounded-sm">📍 Kalyan & Dombivli</span>
+                <span class="bg-brass-100 border border-charcoal-900/5 px-5 py-2.5 text-xs font-semibold uppercase tracking-wider text-charcoal-900 rounded-sm">📍 Borivali & Western Suburbs</span>
+                <span class="bg-brass-100 border border-charcoal-900/5 px-5 py-2.5 text-xs font-semibold uppercase tracking-wider text-charcoal-900 rounded-sm">📍 Panvel Region</span>
+            </div>
+        </section>
+
+        <!-- LEAD CAPTURE CONSULTATION FORM (RESOLVED CLIPPING ACCORDING TO IMAGE_8877F9.JPG) -->
+        <section id="contact" class="py-24 px-6 md:px-12 max-w-4xl mx-auto">
+            <div class="bg-charcoal-900 text-white rounded-sm p-8 sm:p-12 md:p-16 shadow-2xl relative overflow-hidden">
                 <div class="relative z-10">
                     <div class="text-center max-w-xl mx-auto mb-12">
-                        <span class="text-xs font-semibold tracking-[0.2em] uppercase text-brass-600 block mb-3">Project Enquiries</span>
-                        <h2 class="text-3xl md:text-4xl font-serif tracking-wide mb-4">Let's Discuss Your Dream Kitchen Space</h2>
+                        <span class="text-xs font-semibold tracking-[0.2em] uppercase text-brass-600 block mb-3">Free Project Estimate</span>
+                        <h2 class="text-3xl md:text-4xl font-serif tracking-wide mb-4">Discuss Your Home Renovation Requirements</h2>
                         <p class="text-xs text-slate-400 leading-relaxed font-light">
-                            Due to high demand and bespoke manufacturing timelines, Joel takes on a limited number of structural installations each month. Book an initial spatial consultation today.
+                            Fill up the quick contact fields below. Our expert estimation team will connect back within 24 hours to guide you.
                         </p>
                     </div>
 
-                    <form class="space-y-6" onsubmit="event.preventDefault();">
+                    <form class="space-y-8" onsubmit="event.preventDefault();">
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div>
-                                <label class="block text-[10px] tracking-widest uppercase text-slate-400 font-semibold mb-2">Your Full Name</label>
-                                <input type="text" placeholder="e.g. Phil Burt" class="w-full bg-charcoal-800 border border-white/10 rounded-sm px-4 py-3 text-sm focus:outline-none focus:border-brass-600 text-white transition-colors placeholder:text-slate-600">
+                                <label class="block text-[10px] tracking-widest uppercase text-slate-400 font-semibold mb-2">Your Name</label>
+                                <input type="text" placeholder="e.g. Rahul Sharma" class="w-full bg-charcoal-800 border border-white/10 rounded-sm px-4 py-4 text-sm focus:outline-none focus:border-brass-600 text-white transition-colors placeholder:text-slate-600">
                             </div>
                             <div>
                                 <label class="block text-[10px] tracking-widest uppercase text-slate-400 font-semibold mb-2">Phone Number</label>
-                                <input type="tel" placeholder="e.g. +44 7870 200800" class="w-full bg-charcoal-800 border border-white/10 rounded-sm px-4 py-3 text-sm focus:outline-none focus:border-brass-600 text-white transition-colors placeholder:text-slate-600">
+                                <input type="tel" placeholder="e.g. +91 98765 43210" class="w-full bg-charcoal-800 border border-white/10 rounded-sm px-4 py-4 text-sm focus:outline-none focus:border-brass-600 text-white transition-colors placeholder:text-slate-600">
                             </div>
                         </div>
                         <div>
-                            <label class="block text-[10px] tracking-widest uppercase text-slate-400 font-semibold mb-2">Property Location / Area</label>
-                            <input type="text" placeholder="e.g. Timperley / Altrincham Suburbs" class="w-full bg-charcoal-800 border border-white/10 rounded-sm px-4 py-3 text-sm focus:outline-none focus:border-brass-600 text-white transition-colors placeholder:text-slate-600">
+                            <label class="block text-[10px] tracking-widest uppercase text-slate-400 font-semibold mb-2">Your Flat Location Area</label>
+                            <input type="text" placeholder="e.g. Hiranandani Estate, Thane West" class="w-full bg-charcoal-800 border border-white/10 rounded-sm px-4 py-4 text-sm focus:outline-none focus:border-brass-600 text-white transition-colors placeholder:text-slate-600">
                         </div>
                         <div>
-                            <label class="block text-[10px] tracking-widest uppercase text-slate-400 font-semibold mb-2">Briefly Describe Your Project Ambitions</label>
-                            <textarea rows="4" placeholder="e.g. Looking to strip a small traditional kitchen and install a modern open-plan shaker kitchen with flush cabinet re-spraying..." class="w-full bg-charcoal-800 border border-white/10 rounded-sm px-4 py-3 text-sm focus:outline-none focus:border-brass-600 text-white transition-colors placeholder:text-slate-600"></textarea>
+                            <label class="block text-[10px] tracking-widest uppercase text-slate-400 font-semibold mb-2">Briefly Explain What Work You Need</label>
+                            <textarea rows="4" placeholder="e.g. Need to build a premium L-shaped modular kitchen with matte finish cabinets and quartz countertop..." class="w-full bg-charcoal-800 border border-white/10 rounded-sm px-4 py-4 text-sm focus:outline-none focus:border-brass-600 text-white transition-colors placeholder:text-slate-600"></textarea>
                         </div>
-                        <button type="button" class="w-full py-4 bg-brass-600 hover:bg-brass-700 text-white text-xs font-semibold tracking-widest uppercase transition-colors rounded-sm shadow-md">
-                            Request Architectural Consultation
+                        <!-- Broad bold clear action button to match layout constraints neatly -->
+                        <button type="button" class="w-full py-5 bg-brass-600 hover:bg-brass-700 text-white text-xs font-bold tracking-widest uppercase transition-all rounded-sm shadow-md block duration-300">
+                            Request Free Design Estimation Consultation
                         </button>
                     </form>
                 </div>
@@ -423,40 +567,53 @@
 
     </main>
 
-    <!-- ARCHITECTURAL FOOTER -->
-    <footer class="bg-charcoal-900 text-slate-400 text-xs py-12 px-6 lg:px-12 border-t border-white/5">
+    <!-- FOOTER -->
+    <footer class="bg-charcoal-900 text-slate-400 text-xs py-16 px-6 lg:px-12 border-t border-white/5">
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-center text-center md:text-left">
             <div>
-                <div class="text-base font-serif tracking-wider text-white uppercase font-semibold">Joel Doohan</div>
-                <div class="text-[10px] tracking-widest uppercase text-brass-600 mt-0.5">Bespoke Cabinetry & Fitting</div>
+                <div class="text-base font-serif tracking-wider text-white uppercase font-semibold">Doohan Interiors</div>
+                <div class="text-[10px] tracking-widest uppercase text-brass-600 mt-0.5">Premium Modular Kitchens & Solutions</div>
             </div>
             <div class="text-center font-light text-slate-400 space-y-1">
-                <p>📍 148 Stockport Road, Timperley, Altrincham, WA15 7SR</p>
-                <p>📞 +44 7870 200800</p>
+                <p>📍 Main Showroom & Office Workspace Belt, Mumbai Suburbs</p>
+                <p>📞 +91 98765 43210</p>
             </div>
             <div class="md:text-right text-[11px] font-light text-slate-500">
-                <p>© 2026 JOEL DOOHAN LIMITED. All rights reserved.</p>
-                <p class="mt-1 text-[10px]">Company Number: 09751677 | Incorporated in England & Wales.</p>
+                <p>© 2026 DOOHAN INTERIORS PRIVATE LIMITED. All rights reserved.</p>
+                <p class="mt-1 text-[10px]">Premium Modular Kitchen & Complete Home Renovation Frameworks.</p>
             </div>
         </div>
     </footer>
 
-    <!-- CORE JAVASCRIPT FOR ENGINE MODALS -->
+    <!-- STICKY MOBILE ACTION BAR -->
+    <div class="fixed bottom-0 left-0 w-full bg-charcoal-900 border-t border-white/10 grid grid-cols-2 z-50 md:hidden h-16 shadow-2xl">
+        <a href="tel:+919876543210" class="flex items-center justify-center bg-charcoal-800 text-white text-xs font-bold tracking-widest uppercase border-r border-white/5">
+            Call Now
+        </a>
+        <a href="https://wa.me/447870200800" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center bg-[#25D366] text-white text-xs font-bold tracking-widest uppercase">
+            WhatsApp
+        </a>
+    </div>
+
+    <!-- MODAL COMPONENT SCRIPT -->
     <script>
         function openModal(modalId) {
-            const modal = document.getElementById(modalId);
-            modal.classList.remove('hidden');
+            document.getElementById(modalId).classList.remove('hidden');
             document.body.style.overflow = 'hidden';
         }
         function closeModal(modalId) {
-            const modal = document.getElementById(modalId);
-            modal.classList.add('hidden');
+            document.getElementById(modalId).classList.add('hidden');
             document.body.style.overflow = 'auto';
         }
-        window.onclick = function(event) {
-            if (event.target.id.startsWith('modal-')) {
-                event.target.classList.add('hidden');
-                document.body.style.overflow = 'auto';
+        function toggleFaq(id) {
+            const ans = document.getElementById(`faq-ans-${id}`);
+            const icon = document.getElementById(`faq-icon-${id}`);
+            if (ans.classList.contains('hidden')) {
+                ans.classList.remove('hidden');
+                icon.innerText = '−';
+            } else {
+                ans.classList.add('hidden');
+                icon.innerText = '+';
             }
         }
     </script>
